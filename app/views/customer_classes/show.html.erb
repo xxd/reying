@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @customer_class.name %>
+</p>
+
+<p>
+  <b>Discount:</b>
+  <%= @customer_class.discount %>
+</p>
+
+<p>
+  <b>Is active:</b>
+  <%= @customer_class.is_active %>
+</p>
+
+
+<%= link_to 'Edit', edit_customer_class_path(@customer_class) %> |
+<%= link_to 'Back', customer_classes_path %>

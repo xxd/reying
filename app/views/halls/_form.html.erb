@@ -1,0 +1,25 @@
+<%= form_for(@hall) do |f| %>
+  <% if @hall.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@hall.errors.count, "error") %> prohibited this hall from being saved:</h2>
+
+      <ul>
+      <% @hall.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :seats %><br />
+    <%= f.number_field :seats %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

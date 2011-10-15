@@ -1,0 +1,27 @@
+<h1>Listing customer_classes</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Discount</th>
+    <th>Is active</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @customer_classes.each do |customer_class| %>
+  <tr>
+    <td><%= customer_class.name %></td>
+    <td><%= customer_class.discount %></td>
+    <td><%= customer_class.is_active %></td>
+    <td><%= link_to 'Show', customer_class %></td>
+    <td><%= link_to 'Edit', edit_customer_class_path(customer_class) %></td>
+    <td><%= link_to 'Destroy', customer_class, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Customer class', new_customer_class_path %>

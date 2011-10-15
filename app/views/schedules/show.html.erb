@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>References:</b>
+  <%= @schedule.references %>
+</p>
+
+<p>
+  <b>References:</b>
+  <%= @schedule.references %>
+</p>
+
+<p>
+  <b>Price:</b>
+  <%= @schedule.price %>
+</p>
+
+<p>
+  <b>Begindatetime:</b>
+  <%= @schedule.BeginDateTime %>
+</p>
+
+<p>
+  <b>Enddatetime:</b>
+  <%= @schedule.EndDateTime %>
+</p>
+
+
+<%= link_to 'Edit', edit_schedule_path(@schedule) %> |
+<%= link_to 'Back', schedules_path %>

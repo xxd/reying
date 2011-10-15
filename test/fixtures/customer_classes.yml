@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  discount: 1
+  is_active: false
+
+two:
+  name: MyString
+  discount: 1
+  is_active: false

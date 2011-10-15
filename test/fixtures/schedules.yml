@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  references: 
+  references: 
+  price: 9.99
+  BeginDateTime: 2011-10-15 11:56:45
+  EndDateTime: 2011-10-15 11:56:45
+
+two:
+  references: 
+  references: 
+  price: 9.99
+  BeginDateTime: 2011-10-15 11:56:45
+  EndDateTime: 2011-10-15 11:56:45
